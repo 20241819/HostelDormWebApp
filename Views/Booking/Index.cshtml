@@ -1,0 +1,45 @@
+﻿@model IEnumerable<HostelDormWebApp.Models.Room>
+@{
+    ViewData["Title"] = "Book a Room";
+}
+
+<h2>Available Rooms</h2>
+
+<form method="get" asp-action="Index">
+    <div class="form-group mb-3">
+        <label for="roomType">Filter by Room Type:</label>
+        <select name="roomType" class="form-control" onchange="this.form.submit()">
+            <option value="">-- All --</option>
+            @foreach (var type in ViewBag.RoomTypes as List<string>)
+            {
+                <option value="@type" selected="@(Context.Request.Query["roomType"] == type ? "selected" : null)">
+                </option>
+            }
+        </select>
+    </div>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Room Number</th>
+            <th>Type</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>@room.RoomNumber</td>
+                <td>@room.Type</td>
+                <td>
+                    <form asp-action="Book" method="post">
+                        <input type="hidden" name="roomId" value="@room.Id" />
+                        <button class="btn btn-success btn-sm" type="submit">Book Now</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
