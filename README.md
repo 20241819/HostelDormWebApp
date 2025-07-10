@@ -44,6 +44,23 @@ HostelDormWebApp/
 ├── appsettings.json # Database config
 ├── Program.cs / Startup.cs
 └── README.md
+ 
+    
+<img width="958" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/77673380-9850-490b-9733-fe09f99f32ea" />
+<img width="944" alt="My Bookings Page" src="https://github.com/user-attachments/assets/ac261005-1bf7-4205-ae18-03b0010bddca" />
+<img width="951" alt="Book Room Page" src="https://github.com/user-attachments/assets/b18ceace-7527-4880-ad1d-0ba4c998602b" />
+<img width="952" alt="Manage Rooms Page( CRUD functionalities) 2" src="https://github.com/user-attachments/assets/5eb067a2-c73f-4152-b97c-07c6fc66ea2d" />
+<img width="959" alt="Login Page" src="https://github.com/user-attachments/assets/f16b2d63-4f69-43cc-a7f4-f7c8e9531b14" />
+<img width="940" alt="Registration Page" src="https://github.com/user-attachments/assets/973da8d8-850a-4922-b65f-9de216f149ec" />
+<img width="946" alt="Homepage of Project" src="https://github.com/user-attachments/assets/88d95cca-364d-48e9-b5ae-a8d6106c0db7" />
+
+
+  
+    
+ 
+
+ 
+
 
 yaml
 Copy
